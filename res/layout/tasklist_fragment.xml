@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+    <fragment
+        android:name="hw11.ehoughl.uw.TaskListFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/tasklist_fragment"
+        android:layout_weight="33">
+    </fragment>
+    <fragment
+        android:name="hw11.ehoughl.uw.TaskViewerFragment"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:id="@+id/taskview_fragment"
+        android:layout_weight="66">
+    </fragment>
+    <TextView
+        android:id="@+id/hiddenId"
+        android:visibility="gone"
+        android:layout_width="1dp"
+        android:layout_height="1dp" 
+        android:layout_weight="35"
+	/>
+</LinearLayout>
